@@ -14,7 +14,9 @@ The application will process the orders and determine if each individual order i
 
 1. Only orders that have values for the fields of ‘broker’, ‘symbol’, ‘type’, ‘quantity’, ‘sequence id’, ‘side’, and ‘price’ should be accepted.
 2. Only orders for symbols actually traded on the exchange should be accepted
+
 **3. Only order from known brokers should be accepted**
+
 3. Each broker may only submit three orders per minute: any additional orders in should be rejected
 4. Within a single broker’s trades ids must be unique. If ids repeat for the same broker, only the first message with a given id should be accepted.
 
@@ -44,7 +46,9 @@ In Windows:
 
 ## Usage
 Once the application has been correctly configured and built run it by executing the following command from the project root directory:
+
 *jar -jar LTSEOrderSystem.jar [input_file]*
+
 where, [input_file] is the csv you wish to process; if none is provided, it will look for file named "trades.csv" in the project root directory.
 
 ## Testing
