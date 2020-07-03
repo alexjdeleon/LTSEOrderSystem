@@ -1,0 +1,44 @@
+{
+  "transactionTime": "Oct 5, 2017 10:00:00 AM",
+  "broker": "Fidelity",
+  "sequenceId": "1",
+  "type": "2",
+  "symbol": "BARK",
+  "quantity": 100,
+  "price": 1.195,
+  "side": "Buy",
+  "accepted": true
+}
+{
+  "transactionTime": "Oct 5, 2017 10:00:01 AM",
+  "broker": "Charles Schwab",
+  "sequenceId": "1",
+  "type": "2",
+  "symbol": "CARD",
+  "quantity": 200,
+  "price": 6.855,
+  "side": "Sell",
+  "accepted": true
+}
+{
+  "transactionTime": "Oct 5, 2017 10:00:02 AM",
+  "broker": "AXA Advisors",
+  "sequenceId": "1",
+  "type": "K",
+  "symbol": "BRIC",
+  "quantity": 5000,
+  "price": 30.7,
+  "side": "Sell",
+  "accepted": true
+}
+{
+  "transactionTime": "Oct 5, 2017 10:00:03 AM",
+  "broker": "National Planning Corporation",
+  "sequenceId": "1",
+  "type": "K",
+  "symbol": "LGHT",
+  "quantity": 400,
+  "price": 140.0,
+  "side": "Buy",
+  "accepted": true
+}
