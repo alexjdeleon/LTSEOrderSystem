@@ -21,10 +21,13 @@ The application will process the orders and determine if each individual order i
 The application will output two files, one containing broker and id of each accepted order and the other containing the broker and id of each rejected order.
 
 **Please refer to Instructions.pdf for more details.**
+
 **Please note: Rule number 3 was not explicitly mentioned in the Instructions.pdf but was assummed because the firms.txt file was included but not mentioned.**
 
 ## Setup and Configuration
+
 **Please make sure the Java 8 JDK is installed on your system**
+
 Please follow these steps to download and configure this application:
 1. Clone this repository either via the command line or by downloading the ZIP file
 2. If you wish to add, modify, remove any of the broker names and symbol names used in the processing rule, 
@@ -35,8 +38,12 @@ do so by modifiying the txt files in the src/main/resources/data/ directory
 	* if true, two additional files (in JSON) format are generated with the results. - **data.output.generate.json=true**
 4. Once the application is correctly configured
 In the command line, navigate the to cloned repository (or extracted zip directory) and run the appropriate build script
-**Linux/OS X: sh build.sh**
-**Windows: build.bat**
+
+**Linux/OS X:**
+* sh build.sh
+
+**Windows:**
+* build.bat
 
 ## Usage
 Once the application has been correctly configured and built run it by executing the following command from the project root directory:
