@@ -1,9 +1,11 @@
 # LTSEOrderSystem
 This application processes orders and determines which ones are valid and which ones are invalid. 
 
-By default the application will generate two CSV files and two corresponding JSON files with the results; the JSON files can be disabled via the application properties as shown below.
-
 ## Description
+By default the application will generate two CSV files and two corresponding JSON files with the results; 
+
+The JSON format includes a user friendsly "rejection message" for each rejected trade. The JSON files can be disabled via the application properties as shown below in the Setup and Configuration section.
+
 This application takes in a comma separated input file containing the trade orders in the following format:
 
 The first line contains the header -
@@ -35,9 +37,12 @@ Please follow these steps to download and configure this application:
 2. If you wish to add, modify, remove any of the broker names and symbol names used in the processing rule, 
 do so by modifiying the txt files in the **src/main/resources/data/** directory
 3. The following configurations are also available in **src/main/resources/application.properties** file
-	* **data.output.directory=output** - Output directory
-	* **data.output.include.header=false** - If true, the named header is included in the output file
-	* **data.output.generate.json=true** - If true, two additional files (in JSON) format are generated with the results. 
+		Property | Description
+	------------ | -------------
+	 data.output.directory=output | Output directory
+	data.output.include.header=false | If true, the named header is included in the output file
+	data.output.generate.json=true | If true, two additional files (in JSON) format are generated with the results. 
+
 4. Once the application is correctly configured
 In the command line, navigate the to cloned repository (or extracted zip directory) and run the appropriate build script
 
