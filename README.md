@@ -67,7 +67,7 @@ The application includes the following JUnit test cases:
 4. **LTSEOrderProcessorTest** - 
 Runs the following use cases and verifies the results:
 * An input file for which all of the trade orders are accepted
-* An input file for which one trade is rejected for each of the rejected scenarios in the requirements
+* An input file for which one trade is rejected for each of the rejection scenarios in the requirements
 * Verifies that the JSON file (if enabled) is being generated correctly
 
 
