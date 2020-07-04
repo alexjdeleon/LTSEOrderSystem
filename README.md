@@ -31,8 +31,8 @@ The application will output two files, one containing broker and id of each acce
 Please follow these steps to download and configure this application:
 1. Clone this repository either via the command line or by downloading the ZIP file
 2. If you wish to add, modify, remove any of the broker names and symbol names used in the processing rule, 
-do so by modifiying the txt files in the src/main/resources/data/ directory
-3. The following configurations are also available in src/main/resources/application.properties file
+do so by modifiying the txt files in the **src/main/resources/data/** directory
+3. The following configurations are also available in **src/main/resources/application.properties** file
 	* Output directory - **data.output.directory=output**
 	* If true, the named header is included in the output file - **data.output.include.header=false**
 	* if true, two additional files (in JSON) format are generated with the results. - **data.output.generate.json=true**
@@ -53,3 +53,16 @@ Once the application has been correctly configured and built run it by executing
 where, [input_file] is the csv you wish to process; if none is provided, it will look for file named "trades.csv" in the project root directory.
 
 ## Testing
+The application includes the following JUnit test cases:
+1. **PropertyManagerTest** - Verifies that the application's properties load properly
+2. **TradeInputMapperTest** - Tests that the functionality for mapping the comma separated representation of an order to an object
+3. **LTSEDataRepositoryTest** - Verifies that the application's reference data loads propely
+4. **LTSEOrderProcessorTest** - 
+Runs the following use cases and verifies the results:
+* An input file for which all of the trade orders are accepted
+* An input file for which one trade is rejected for each of the rejected scenarios in the requirements
+* Verifies that the JSON file (if enabled) is being generated correctly
+
+
+
+
