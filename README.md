@@ -41,7 +41,7 @@ do so by modifiying the txt files in the **src/main/resources/data/** directory
 	------------ | -------------
 	 data.output.directory=output | Output directory
 	data.output.include.header=false | If true, the named header is included in the output file
-	data.output.generate.json=true | If true, two additional files (in JSON) format are generated with the results. 
+	data.output.generate.json=true | If true, two additional files in JSON format are generated with the results. 
 
 4. Once the application is correctly configured
 In the command line, navigate the to cloned repository (or extracted zip directory) and run the appropriate build script
@@ -53,7 +53,7 @@ In the command line, navigate the to cloned repository (or extracted zip directo
 * build.bat
 
 ## Usage
-Once the application has been correctly configured and built run it by executing the following command from the project root directory:
+Once the application has been correctly configured and built, run it by executing the following command from the project root directory:
 
 *jar -jar LTSEOrderSystem.jar [input_file]*
 
