@@ -60,7 +60,7 @@ public class TradeInputMapper {
 		String[] tradeLine = inputString.split(",");
 		Trade trade = new Trade();
 		// Transaction time
-		if (!StringUtils.isBlank(tradeLine[0])) {
+		if (tradeLine.length > 0 && !StringUtils.isBlank(tradeLine[0])) {
 			try {
 				trade.setTransactionTime(transactionDateFormat.parse(tradeLine[0]));
 			} catch (ParseException e) {
@@ -68,23 +68,23 @@ public class TradeInputMapper {
 			}
 		}
 		// Broker name
-		if (!StringUtils.isBlank(tradeLine[1])) {
+		if (tradeLine.length > 1 && !StringUtils.isBlank(tradeLine[1])) {
 			trade.setBroker(tradeLine[1]);
 		}
 		// Sequence ID
-		if (!StringUtils.isBlank(tradeLine[2])) {
+		if (tradeLine.length > 2 && !StringUtils.isBlank(tradeLine[2])) {
 			trade.setSequenceId(tradeLine[2]);
 		}
 		// Type
-		if (!StringUtils.isBlank(tradeLine[3])) {
+		if (tradeLine.length > 3  && !StringUtils.isBlank(tradeLine[3])) {
 			trade.setType(tradeLine[3]);
 		}
 		// Symbol
-		if (!StringUtils.isBlank(tradeLine[4])) {
+		if (tradeLine.length > 4  && !StringUtils.isBlank(tradeLine[4])) {
 			trade.setSymbol(tradeLine[4]);
 		}
 		// Quantity
-		if (!StringUtils.isBlank(tradeLine[5])) {
+		if (tradeLine.length > 5 && !StringUtils.isBlank(tradeLine[5])) {
 			try {
 				trade.setQuantity(Integer.parseInt(tradeLine[5]));
 			} catch(NumberFormatException nfe) {
@@ -92,7 +92,7 @@ public class TradeInputMapper {
 			}
 		}
 		// Price
-		if (!StringUtils.isBlank(tradeLine[6])) {
+		if (tradeLine.length > 6 && !StringUtils.isBlank(tradeLine[6])) {
 			try {
 				trade.setPrice(Double.parseDouble(tradeLine[6]));
 			} catch (NumberFormatException nfe) {
