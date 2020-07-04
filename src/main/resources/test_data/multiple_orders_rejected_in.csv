@@ -1,0 +1,24 @@
+Time stamp,broker,sequence id,type,Symbol,Quantity,Price,Side
+10/5/2017 10:00:00,Fidelity,1,2,BARK,100,1.195,Buy
+10/5/2017 10:00:01,Charles Schwab,1,2,CARD,200,6.855,Sell
+10/5/2017 10:00:02,AXA Advisors,1,K,BRIC,5000,30.7,Sell
+10/5/2017 10:00:04,Edward Jones,1,K,HOOF,150,39.1,Buy
+10/5/2017 10:00:05,Raymond James Financial,1,K,YLLW,200,11,Buy
+10/5/2017 10:00:06,Wells Fargo Advisors,1,K,LGHT,100,140.1,Sell
+10/5/2017 10:00:08,LPL Financial,1,K,LGHT,600,140.005,Sell
+10/5/2017 10:00:09,Ameriprise Financial,1,K,LOUM,200,29.87,Buy
+10/5/2017 10:00:11,TD Ameritrade,1,K,LOUD,200,10.95,Buy
+10/5/2017 10:00:40,Fidelity,2,2,LGHT,100,140.05,Buy
+10/5/2017 10:00:40,Fidelity,6,2,LGHT,100,140.05,Buy
+10/5/2017 10:00:40,Fidelity,8,2,LGHT,100,140.05,Buy
+10/5/2017 10:01:53,AXA Advisors,4,2,BRIC,1400,30.7,Sell
+10/5/2017 10:01:54,Raymond James Financial,4,2,BRIC,900,30.69,Buy
+10/5/2017 10:01:58,TD Ameritrade,4,2,LGHT,500,98.77,Sell
+10/5/2017 10:02:00,Fidelity,5,2,HOOF,100,39.12,Sell
+10/5/2017 10:02:00,Wells Fargo Advisors,6,K,LGHT,400,140,Buy
+10/5/2017 10:02:01,Ameriprise Financial,5,K,KRIL,500,6.075,Buy
+10/5/2017 10:02:02,Test Broker,5,2,BARK,100,1.19,Sell
+10/5/2017 10:02:03,Raymond James Financial,5,2,VELL,100,12,Sell
+10/5/2017 10:02:04,AXA Advisors,5,2,CARD,100,6.65,Buy
+10/5/2017 10:02:05,LPL Financial,5,2,,200,6.68,Buy
+10/5/2017 10:02:06,Charles Schwab,5,2,GLOO,100,40.02,Buy
