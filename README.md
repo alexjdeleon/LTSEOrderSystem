@@ -55,7 +55,7 @@ In the command line, navigate the to cloned repository (or extracted zip directo
 ## Usage
 Once the application has been correctly configured and built, run it by executing the following command from the project root directory:
 
-*jar -jar LTSEOrderSystem.jar [input_file]*
+*java -jar LTSEOrderSystem.jar [input_file]*
 
 where, [input_file] is the csv you wish to process; if none is provided, it will look for file named "trades.csv" in the project root directory.
 
